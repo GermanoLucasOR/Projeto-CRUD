@@ -40,14 +40,22 @@ void Data::setDia(int d) {
     dia = d;
 }
 
-void Data::setMes(int m) {
+void Data :: setMes(int m) {
     mes = m;
 }
 
-void Data::setAno(int a) {
+void Data :: setAno(int a) {
     ano = a;
 }
 
 void Data :: exibirData() {
   cout << "Data de Nascimento: " << dia << "/" << mes << "/" << ano << endl;
+}
+string Data :: getData() {
+  string data;
+  data = getDia() + "/" + getMes() + "/" + getAno();
+  return data;
+}
+void Data :: setData(string d) {
+  data = d;
 }
