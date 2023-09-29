@@ -12,12 +12,24 @@ Prisioneiro :: Prisioneiro() : Pessoa() {
 string Prisioneiro :: getCrime() {
   return crime;
 }
+int Prisioneiro :: getNumC() {
+  return numCela;
+}
 int Prisioneiro :: getPena() {
   return pena;
 }
+string Prisioneiro :: getGangue(){
+  return gangue;
+}
 
+void Prisioneiro :: setGangue(string g){
+  gangue = g;
+}
 void Prisioneiro :: setCrime(string cr) {
   crime = cr;
+}
+void Prisioneiro :: setNumC(int c) {
+  numCela = c;
 }
 void Prisioneiro :: setPena(int p) {
   pena = p;
@@ -25,7 +37,6 @@ void Prisioneiro :: setPena(int p) {
 
 void Prisioneiro :: exibirPrisioneiro(){
   Pessoa::exibir();
-  cout << "Crime: " << crime << "\n" << "Pena: " << pena << " anos" << endl;
+  string singular_plural = (pena == 1) ? " ano" : " anos";
+  cout << "Gangue afiliada: " << gangue << "\n" << "Crime: " << crime << "\n" << "Pena: " << pena << singular_plural << endl;
 }
-
-
