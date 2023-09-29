@@ -10,11 +10,16 @@ class Prisioneiro : public Pessoa{
     Prisioneiro();
     string getCrime();
     int getPena();
+    int getNumC();
+    string getGangue();
+    int getCela();
     void setCrime(string c);
+    void setNumC(int c);
     void setPena(int p);
+    void setGangue(string g);
     void exibirPrisioneiro();
-
+  
   private:
-    string crime;
-    int pena;
+    string crime, gangue;
+    int pena, numCela;
 };
