@@ -9,6 +9,8 @@ public:
     std::string getDia();
     std::string getMes();
     std::string getAno();
+    std::string getData();
+    void setData(std::string d);
     void setDia(int d);
     void setMes(int m);
     void setAno(int a);
@@ -18,4 +20,5 @@ private:
     int dia;
     int mes;
     int ano;
+    std::string data;
 };
