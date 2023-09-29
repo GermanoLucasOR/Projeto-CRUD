@@ -21,3 +21,4 @@ void Funcionario::exibirFuncionario(){
   Pessoa::exibir();
   cout << "Cargo: " << cargo << endl;
 }
+
